@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex4</title>
+    <link rel="stylesheet" href="../css/ex4.css" />
+    <script src="../js/ex4.js" defer></script>
+  </head>
+  <body>
+    <a href="../index.html">Back to index</a>
+    <h2>Sample Form</h2>
+    <form id="form">
+      <label for="name">Name: </label>
+      <input type="text" name="name" />
+      <br />
+      <br />
+      <label for="email">Email: </label>
+      <input type="email" name="email" placeholder="name@domain"/>
+      <p>Payment Type:</p>
+      <div>
+        <input type="radio" name="payment" value="cash" id="cash" />
+        <label for="cash">Cash</label>
+      </div>
+      <div>
+        <input type="radio" name="payment" value="credit" id="credit" />
+        <label for="credit">Credit Card</label>
+      </div>
+      <div>
+        <input type="radio" name="payment" value="googlepay" id="googlepay" />
+        <label for="googlepay">Google Pay</label>
+      </div>
+      <div>
+        <input type="radio" name="payment" value="applepay" id="applepay" />
+        <label for="applepay">Apple Pay</label>
+      </div>
+      <br />
+      <input type="checkbox" id="promotions" name="promotions" />
+      <label for="promotions">Sign me up for special promotions</label>
+      <br />
+      <br />
+      <label for="location">Preferred Location</label>
+      <select name="location" id="location">
+        <option value="LA" selected>Los Angeles</option>
+        <option value="OC">Orange Country</option>
+        <option value="RS">Riverside</option>
+        <option value="SD">Sand Diego</option>
+      </select>
+      <br />
+      <br />
+      <input type="button" value="Submit" id="submit">
+      <input type="button" value="Cancel">
+    </form>
+    <div id="data" style="display: none;">
+      <h2>Form Data Entered</h2>
+      <table id="dataTable">
+        <tr>
+          <th>Key</th>
+          <th>Value</th>
+        </tr>
+        
+        <tr>
+          <td>Email</td>
+          <td id="email"></td>
+        </tr>
+        <tr>
+          <td>Payment Type</td>
+          <td id="payment"></td>
+        </tr>
+        <tr>
+          <td>Sign up for promotions</td>
+          <td id="promotions"></td>
+        </tr>
+        <tr>
+          <td>Preferred Location</td>
+          <td id="location"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
